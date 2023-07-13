@@ -50,6 +50,11 @@ $(document).ready(function() {
 });
 //Make API work
 
+$(document).ready(function() {
+    $("#button-5-sciencegenerator").click(function(generateScience) {
+        
+    }
+)});
 function generateScience () {
 
 }
