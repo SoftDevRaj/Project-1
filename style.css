@@ -1,0 +1,20 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .chat-bubble {
+    background-color: rgb(7, 96, 148);
+    color: white;
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom: auto;
+    display: inline-block;
+  }
+  
+  .chat-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+  }
