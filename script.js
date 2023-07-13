@@ -1,5 +1,5 @@
 //Add event listeners for the buttons
-$("#p-2, #p-3, #p-4, #p-5, #p-6, #p-7, #p-8, #p-9, #p-10, #p-11, #p-12, #p-13, #p-14, #p-15, #p-16, #button-2, #button-3, #button-4, #button-5-aigenerator, #button-5-5, #button-6, #button-6-5, #button-7, #button-7-5, #button-8, #button-9, #button-10, #button-11, #button-12, #button-13, #button-14, #button-14-5, #button-15, #button-16-mantragenerator").hide();
+$("#p-2, #p-3, #p-4, #p-5, #p-6, #p-7, #p-8, #p-9, #p-10, #p-11, #p-12, #p-13, #p-14, #p-15, #p-16, #button-2, #button-3, #button-4, #button-5-sciencegenerator, #button-5-5, #button-6, #button-6-5, #button-7, #button-7-5, #button-8, #button-9, #button-10, #button-11, #button-12, #button-13, #button-14, #button-14-5, #button-15, #button-16-mantragenerator").hide();
 $(document).ready(function() {
     $("#button-1").click(function() {
         $("#p-2, #button-2").fadeIn([3000]);
