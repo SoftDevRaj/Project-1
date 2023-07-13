@@ -1,5 +1,5 @@
 //Add event listeners for the buttons
-$("#p-2, #p-3, #p-4, #p-5, #p-6, #p-7, #p-8, #p-9, #p-10, #p-11, #p-12, #p-13, #p-14, #p-15, #p-16, #button-2, #button-3, #button-4, #button-5-sciencegenerator, #button-5-5, #button-6, #button-6-5, #button-7, #button-7-5, #button-8, #button-9, #button-10, #button-11, #button-12, #button-13, #button-14, #button-14-5, #button-15, #button-16-mantragenerator").hide();
+$("#p-2, #p-3, #p-4, #p-5, #p-6, #p-7, #p-8, #p-9, #p-10, #p-11, #p-12, #p-13, #p-14, #p-15, #p-16, #button-2, #button-3, #button-4, #button-5-sciencegenerator, #button-5-5, #button-6, #button-6-5, #button-7, #button-7-5, #button-8, #button-9, #button-10, #button-11, #button-12, #button-13, #button-14, #button-14-5, #button-15, #button-16-mantragenerator, #techtalkz").hide();
 $(document).ready(function() {
     $("#button-1").click(function() {
         $("#p-2, #button-2").fadeIn([3000]);
@@ -51,9 +51,8 @@ $(document).ready(function() {
 //Make API work
 
 //$("#button-5-sciencegenerator").click(function(generateScience) {
+  // });
 
-   // });
-   
 $(document).ready(function() {
  $("#button-1").click(function() {
     generateScience() })})
@@ -64,25 +63,18 @@ async function generateScience() {
         const phrase = await response.text();
 
         $("#button-5-sciencegenerator").click(function() {
-        $("#button-5-sciencegenerator").html(phrase);
+        $("#techtalkz").html(phrase).fadeIn();
         console.log(phrase);
 
+    });
+      
+        $("#button-5-sciencegenerator").click(function() {
+        generateScience(phrase);
+        $("#techtalkz").html(phrase);
     });
 
     }   catch (error) {
         console.log('Error:', error);
     }  
-};
-//addEventListener("click", function(generateScience) {
-    //document.getElementById("#button-5-sciencegenerator").innerHTML = phrase;
-  //});
-/*function generateScience() {
-    fetch('https://techy-api.vercel.app/api/text')
-    .then(function(res){
-        return res.text();
-    })
-    .then(function(phrase){ 
-        console.log(phrase);
-    });
     
-};*/
+};
