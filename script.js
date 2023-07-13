@@ -50,11 +50,39 @@ $(document).ready(function() {
 });
 //Make API work
 
-$(document).ready(function() {
-    $("#button-5-sciencegenerator").click(function(generateScience) {
-        
-    }
-)});
-function generateScience () {
+//$("#button-5-sciencegenerator").click(function(generateScience) {
 
-}
+   // });
+   
+$(document).ready(function() {
+ $("#button-1").click(function() {
+    generateScience() })})
+
+async function generateScience() {
+    try {
+        const response = await fetch('https://techy-api.vercel.app/api/text');
+        const phrase = await response.text();
+
+        $("#button-5-sciencegenerator").click(function() {
+        $("#button-5-sciencegenerator").html(phrase);
+        console.log(phrase);
+
+    });
+
+    }   catch (error) {
+        console.log('Error:', error);
+    }  
+};
+//addEventListener("click", function(generateScience) {
+    //document.getElementById("#button-5-sciencegenerator").innerHTML = phrase;
+  //});
+/*function generateScience() {
+    fetch('https://techy-api.vercel.app/api/text')
+    .then(function(res){
+        return res.text();
+    })
+    .then(function(phrase){ 
+        console.log(phrase);
+    });
+    
+};*/
