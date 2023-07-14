@@ -48,14 +48,12 @@ $(document).ready(function () {
         });
     });
 });
-//Make API work
 
-//$("#button-5-sciencegenerator").click(function(generateScience) {
-// });
 
 $(document).ready(function () {
     $("#button-5-sciencegenerator").click(function () {
-    generateScience();
+        generateScience();
+        //letsStore();
     });
 });
 
@@ -68,9 +66,76 @@ async function generateScience() {
         $("#savebutton, #techtalk-count, #smart, #button-5-5").fadeIn();
         console.log(phrase);
 
-        } catch (error) {
-            console.log('Error:', error);
+    } catch (error) {
+        console.log('Error:', error);
+    }
+
+}
+
+/*function letsStore() {
+    var phraseInput = document.getElementById("techtalkz");
+    var savebutton = document.getElementById("savebutton");
+    var phraseList = document.getElementById("phrase-list");
+    var phraseCountSpan = document.getElementById("techtalk-count");
+
+    var phrases = [];
+
+    function renderphrases() {
+        phraseList.innerHTML = "";
+        phraseCountSpan.textContent = phrases.length;
+
+        for (var i = 0; i < phrases.length; i++) {
+            var phrase = phrases[i];
+
+            var li = document.createElement("li");
+            li.textContent = phrase;
+            li.setAttribute("data-index", i);
+
+            phraseList.appendChild(li);
+        }
+    }
+
+    function init() {
+        var storedphrases = JSON.parse(localStorage.getItem("phrases"));
+
+        if (storedphrases !== null) {
+            phrases = storedphrases;
         }
 
+        renderphrases();
     }
-//Work below since last git push
+
+    function storephrases() {
+        localStorage.setItem("phrases", JSON.stringify(phrases));
+    }
+
+    savebutton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var phraseText = phraseInput.value.trim();
+
+        if (phraseText === "") {
+            return;
+        }
+
+        phrases.push(phraseText);
+        phraseInput.value = "";
+
+        storephrases();
+        renderphrases();
+    });
+
+    phraseList.addEventListener("click", function (event) {
+        var element = event.target;
+
+        if (element.matches("button") === true) {
+            var index = element.parentElement.getAttribute("data-index");
+            phrases.splice(index, 1);
+
+            storephrases();
+            renderphrases();
+        }
+    });
+
+    init();
+};*/
