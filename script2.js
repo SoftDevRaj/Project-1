@@ -8,9 +8,29 @@ const options = {
 };
 
 try {
-	const response = await fetch(url, options);
-	const result = await response.text();
+	const response = fetch(url, options);
+	const result = response.text();
 	console.log(result);
 } catch (error) {
-	console.error(error);
+	
 }
+
+$(document).ready(function () {
+    $("#button-16-mantragenerator").click(function () {
+    generateQuote();
+    });
+});
+
+async function generateQuote() {
+    try {
+        const response = await fetch('https://words-of-wisdom-the-famous-quotes-api2.p.rapidapi.com/quotes');
+        const phrase = await response.text();
+
+        $("#inspirationalquote").html(phrase).fadeIn();
+        console.log(phrase);
+
+        } catch (error) {
+            console.log('Error:', error);
+        }
+
+    }
