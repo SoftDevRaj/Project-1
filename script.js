@@ -54,32 +54,21 @@ $(document).ready(function () {
 // });
 
 $(document).ready(function () {
-    $("#button-5-sciencegenerator").click(function (generateScience) {
-
-    }
-    )
+    $("#button-5-sciencegenerator").click(function () {
+    generateScience();
+    });
 });
-function generateScience() {
 
-    async function generateScience() {
-        try {
-            const response = await fetch('https://techy-api.vercel.app/api/text');
-            const phrase = await response.text();
+async function generateScience() {
+    try {
+        const response = await fetch('https://techy-api.vercel.app/api/text');
+        const phrase = await response.text();
 
-            $("#button-5-sciencegenerator").click(function () {
-                $("#techtalkz").html(phrase).fadeIn();
-                console.log(phrase);
-
-            });
-
-            $("#button-5-sciencegenerator").click(function () {
-                generateScience(phrase);
-                $("#techtalkz").html(phrase);
-            });
+        $("#techtalkz").html(phrase).fadeIn();
+        console.log(phrase);
 
         } catch (error) {
             console.log('Error:', error);
         }
 
-    };
-}
+    }
