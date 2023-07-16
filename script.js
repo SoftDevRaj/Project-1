@@ -9,7 +9,7 @@ $(document).ready(function () {
             $("#button-3").click(function () {
                 $("#p-4, #button-4").fadeIn([3000]);
                 $("#button-4").click(function () {
-                    $("#p-5, #button-5-sciencegenerator").fadeIn([3000]);
+                    $("#p-5, #button-5-sciencegenerator").fadeIn([]);
                     $("#button-5-5").click(function () {
                         $("#p-6, #button-6, #button-6-5").fadeIn()[3000];
                         $("#button-6, #button-6-5").click(function () {
@@ -53,7 +53,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#button-5-sciencegenerator").click(function () {
         generateScience();
-        //letsStore();
     });
 });
 
@@ -69,10 +68,15 @@ async function generateScience() {
     } catch (error) {
         console.log('Error:', error);
     }
+};
 
-}
+$(document).ready(function () {
+    $('#savebutton').click(function () {
+        saveScience();
+    });
+});
 
-/*function letsStore() {
+function saveScience() {
     var phraseInput = document.getElementById("techtalkz");
     var savebutton = document.getElementById("savebutton");
     var phraseList = document.getElementById("phrase-list");
@@ -112,13 +116,11 @@ async function generateScience() {
     savebutton.addEventListener("click", function (event) {
         event.preventDefault();
 
-        var phraseText = phraseInput.value.trim();
-
-        if (phraseText === "") {
+        if (phraseInput === "") {
             return;
         }
 
-        phrases.push(phraseText);
+        phrases.push(phraseInput);
         phraseInput.value = "";
 
         storephrases();
@@ -138,4 +140,4 @@ async function generateScience() {
     });
 
     init();
-};*/
+};
