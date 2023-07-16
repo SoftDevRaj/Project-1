@@ -1,4 +1,4 @@
-const url = 'https://words-of-wisdom-the-famous-quotes-api2.p.rapidapi.com/quotes';
+const url = 'https://icanhazdadjoke.com/';
 const options = {
 	method: 'GET',
 	headers: {
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 async function generateQuote() {
     try {
-        const response = await fetch('https://words-of-wisdom-the-famous-quotes-api2.p.rapidapi.com/quotes');
+        const response = await fetch('https://icanhazdadjoke.com/');
         const phrase = await response.text();
 
         $("#inspirationalquote").html(phrase).fadeIn();
