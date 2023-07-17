@@ -63,7 +63,6 @@ async function generateScience() {
 
         $("#techtalkz").html(phrase).fadeIn();
         $("#savebutton, #techtalk-count, #smart, #button-5-5").fadeIn();
-        console.log(phrase);
 
     } catch (error) {
         console.log('Error:', error);
@@ -120,7 +119,7 @@ function saveScience() {
             return;
         }
 
-        phrases.push(phraseInput);
+        phrases.push(phraseInput.value);
         phraseInput.value = "";
 
         storephrases();
@@ -134,6 +133,7 @@ function saveScience() {
             var index = element.parentElement.getAttribute("data-index");
             phrases.splice(index, 1);
 
+            console.log(phraseInput.value);
             storephrases();
             renderphrases();
         }
