@@ -119,8 +119,8 @@ function saveScience() {
             return;
         }
 
-        phrases.push(phraseInput.value);
-        phraseInput.value = "";
+        phrases.push(phraseInput.textContent);
+        phraseInput.textContent = "";
 
         storephrases();
         renderphrases();
