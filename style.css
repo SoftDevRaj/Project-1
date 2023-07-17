@@ -1,0 +1,13 @@
+/* trying my hand at responsive layouts
+/* Tablets */
+@media screen and (max-width: 992px) {
+    }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+  }
+  
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+  }
+  

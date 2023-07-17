@@ -1,3 +1,4 @@
+// dad joke api
 const url = 'https://icanhazdadjoke.com/';
 const options = {
 	method: 'GET',
@@ -15,6 +16,7 @@ try {
 	
 }
 
+// attaching dad joke api to button
 $(document).ready(function () {
     $("#button-16-mantragenerator").click(function () {
     generateQuote();
