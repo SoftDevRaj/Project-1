@@ -4,65 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="style.css"> 
     <title>Tech Talkz</title>
 </head>
 <body>
-    <div class="content has-text-centered">
-        <p id="p-1" class="is-size-1 is-rounded is-bold is-italic">Have you ever been the only liberal arts person in a STEM-filled room?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 is-italic has-text-weight-semibold" id="button-1">Yes!</button>
+    <br>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-1" class="is-size-4 has-text-white is-align-items-center custom-font">Have you ever been the only liberal arts person in a STEM-filled room?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-1">Yes!</button>
+        </div>
+        
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-2" class="is-size-4 has-text-white is-align-items-center custom-font">Have you ever felt #liberalartsFOMO when your developer friends were talking about their code?</p></div>
+        </div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-2">Yes...</button></div>
     
-        <p id="p-2" class="is-size-1 is-rounded is-bold is-italic">Have you ever felt #liberalartsFOMO when your developer friends were talking about their code?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-2">Yes...</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-3" class="is-size-4 has-text-white is-align-items-center custom-font">Almost like... they were speaking a different language?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-3">Yes?!?!?!</button></div>
     
-        <p id="p-3" class="is-size-1 is-rounded is-bold is-italic">Almost like... they were speaking a different language?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-3">Yes?!?!?!</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-4" class="is-size-4 has-text-white is-align-items-center custom-font">Introducing... TechTalkz! A platform that teaches you how to talk like a true techie.</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-4">Wow! That's everything I could have ever asked for and more!</button></div>
     
-        <p id="p-4" class="is-size-1 is-rounded is-bold is-italic">Introducing... TechTalkz! A platform that teaches you how to talk like a true techie.</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-4">Wow! That's everything I could have ever asked for and more!</button>
-    
-        <p id="p-5" class="is-size-1 is-rounded is-bold is-italic">Trick people into thinking that you know what you're doing!</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-5-sciencegenerator">Generate a TechTalk!</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-5" class="is-size-4 has-text-white is-align-items-center custom-font">Trick people into thinking that you know what you're doing!</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-5-sciencegenerator">Generate a Tec>hTalk!</button></div>
     
         <div id="techtalkz"></div>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="savebutton">Save My TechTalk!</button> 
-        <p id="smart">I was smart <span id="techtalk-count">0</span> times today.</p>
-        <ol id="phrase-list"></ol>
 
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-5-5">I've generated my science!</button>
-
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-6" class="is-size-4 has-text-white is-align-items-center custom-font">How do you feel now?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-6">On top of the world!</button>
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-6-5">Pretty down.</button></div>
     
-        <p id="p-6" class="is-size-1 is-rounded is-bold is-italic">How do you feel now?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-6">On top of the world!</button>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-6-5">Pretty down.</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-7" class="is-size-4 has-text-white is-align-items-center custom-font">Oh, really? Tell me a little about that.</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-7">This gave me confidence I didn't know I needed!</button>
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-7-5">Despite this app, life's hard. Capitalism, ya know?</button></div>
     
-        <p id="p-7" class="is-size-1 is-rounded is-bold is-italic">Oh, really? Tell me a little about that.</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-7">This gave me confidence I didn't know I needed!</button>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-7-5">Despite this app, life's hard. Capitalism, ya know?</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-8" class="is-size-4 has-text-white is-align-items-center custom-font">Right... but you realize you're talking to a computer?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-8">...Yes</button></div>
     
-        <p id="p-8" class="is-size-1 is-rounded is-bold is-italic">Right... but you realize you're talking to a computer?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-8">...Yes</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-9" class="is-size-4 has-text-white is-align-items-center custom-font">Why do you want to sound science-y anyways? To fit in? Sound smart?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-9">I guess...</button></div>
     
-        <p id="p-9" class="is-size-1 is-rounded is-bold is-italic">Why do you want to sound science-y anyways? To fit in? Sound smart?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-9">I guess...</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-10" class="is-size-4 has-text-white is-align-items-center custom-font">What does it matter, anyways? The world's really becoming AI generated, huh?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-10">Yes...</button></div>
     
-        <p id="p-10" class="is-size-1 is-rounded is-bold is-italic">What does it matter, anyways? The world's really becoming AI generated, huh?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-10">Yes...</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-11" class="is-size-4 has-text-white is-align-items-center custom-font">What if we're AI generated?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-11">Huh?</button></div>
     
-        <p id="p-11" class="is-size-1 is-rounded is-bold is-italic">What if we're AI generated?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-11">Huh?</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-12" class="is-size-4 has-text-white is-align-items-center custom-font">I'm serious. What if we're in a simulation?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-12">Excuse me?</button></div>
     
-        <p id="p-12" class="is-size-1 is-rounded is-bold is-italic">I'm serious. What if we're in a simulation?</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-12">Excuse me?</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-13" class="is-size-4 has-text-white is-align-items-center custom-font">What if nothing's real and everything's a lie???? What is existence anyways? Is it futile? (long monologue about existence)</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-13">Oh my god... That's depressing.</button></div>
     
-        <p id="p-13" class="is-size-1 is-rounded is-bold is-italic">What if nothing's real and everything's a lie???? What is existence anyways? Is it futile? (long monologue about existence)</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-13">Oh my god... That's depressing.</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-14" class="is-size-4 has-text-white is-align-items-center custom-font">Oh no, oh no, I’ve spiraled again, haven’t I! Apologies for this.</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-14">It's okay, I guess.</button>
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-14-5">Bro, you need therapy.</button></div>
     
-        <p id="p-14" class="is-size-1 is-rounded is-bold is-italic">Oh no, oh no, I’ve spiraled again, haven’t I! Apologies for this.</p>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-14">It's okay, I guess.</button>
-        <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-14-5">Bro, you need therapy.</button>
+        <div class="container has-text-centered">
+        <div class="box has-background-info is-rounded is-inline-block">
+        <p id="p-15" class="is-size-4 has-text-white is-align-items-center custom-font">Is there anything I can do to give you faith in the world again?</p></div></div><br>
+        <div class="has-text-centered">
+        <button type="button" class="button is-primary is-large is-rounded m-3 custom-font" id="button-15">I don't know, tbh.</button></div>
     
         <p id="p-15" class="is-size-1 is-rounded is-bold is-italic">Is there anything I can do to give you faith in the world again?</p>
             <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-15">I don't know, tbh.</button>
@@ -70,14 +115,10 @@
         <p id="p-16" class="is-size-1 is-rounded is-bold is-italic">I have an idea! Click on this button for a dad joke. Dad jokes help everything!</p>
             <button type="button" class="button is-primary is-large is-rounded m-3 has-text-weight-semibold is-italic" id="button-16-mantragenerator">Generate a dad joke and believe in humanity again!</button>
             <div id="inspirationalquote"></div>
-</div>
-
-
     
      <!-- Insert Mantra API -->
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="script.js"></script>
-<script src="script2.js"></script>
 </html>

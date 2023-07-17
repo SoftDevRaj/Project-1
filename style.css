@@ -11,3 +11,6 @@
   @media screen and (max-width: 576px) {
   }
   
+.custom-font {
+    font-family: 'Oswald', sans-serif;
+  }
