@@ -1,5 +1,5 @@
 // dad joke api
-const url = 'https://icanhazdadjoke.com/';
+const url = 'https://api.chucknorris.io/jokes/random';
 const options = {
 	method: 'GET',
 	headers: {
@@ -16,6 +16,7 @@ try {
 	
 }
 
+
 // attaching dad joke api to button
 $(document).ready(function () {
     $("#button-16-mantragenerator").click(function () {
@@ -25,7 +26,7 @@ $(document).ready(function () {
 
 async function generateQuote() {
     try {
-        const response = await fetch('https://icanhazdadjoke.com/');
+        const response = await fetch('https://api.chucknorris.io/jokes/random');
         const phrase = await response.text();
 
         $("#inspirationalquote").html(phrase).fadeIn();
