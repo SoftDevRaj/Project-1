@@ -71,62 +71,63 @@ async function generateScience() {
 
 $(document).ready(function () {
     $('#savebutton').click(function () {
-        saveScience();
+        init();
     });
 });
 
-function saveScience() {
-    var phraseInput = document.getElementById("techtalkz");
-    var savebutton = document.getElementById("savebutton");
-    var phraseList = document.getElementById("phrase-list");
-    var phraseCountSpan = document.getElementById("techtalk-count");
+var phrases = [];
+var phraseInput = document.getElementById("techtalkz");
+var savebutton = document.getElementById("savebutton");
+var phraseList = document.getElementById("phrase-list");
+var phraseCountSpan = document.getElementById("techtalk-count");
 
-    var phrases = [];
 
-    function renderphrases() {
-        phraseList.innerHTML = "";
-        phraseCountSpan.textContent = phrases.length;
+function renderphrases() {
+    phraseList.innerHTML = "";
+    phraseCountSpan.textContent = phrases.length;
 
-        for (var i = 0; i < phrases.length; i++) {
-            var phrase = phrases[i];
+    for (var i = 0; i < phrases.length; i++) {
+        var phrase = phrases[i];
 
-            var li = document.createElement("li");
-            li.textContent = phrase;
-            li.setAttribute("data-index", i);
+        var li = document.createElement("li");
+        li.textContent = phrase;
+        li.setAttribute("data-index", i);
 
-            phraseList.appendChild(li);
-        }
+        phraseList.appendChild(li);
+    }
+}
+
+function init() {
+    var storedphrases = JSON.parse(localStorage.getItem("phrases"));
+
+    if (storedphrases !== null) {
+        phrases = storedphrases;
     }
 
-    function init() {
-        var storedphrases = JSON.parse(localStorage.getItem("phrases"));
+    renderphrases();
+}
 
-        if (storedphrases !== null) {
-            phrases = storedphrases;
-        }
+function storephrases() {
+    localStorage.setItem("phrases", JSON.stringify(phrases));
+}
 
-        renderphrases();
+savebutton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    if (phraseInput === "") {
+        return;
     }
-
-    function storephrases() {
-        localStorage.setItem("phrases", JSON.stringify(phrases));
-    }
-
-    savebutton.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        if (phraseInput === "") {
-            return;
-        }
 
         phrases.push(phraseInput.textContent);
-        phraseInput.textContent = "";
 
         storephrases();
+
+        //phraseInput.textContent = "";
+
         renderphrases();
     });
 
-    phraseList.addEventListener("click", function (event) {
+    /*phraseList.addEventListener("click", function (event) {
         var element = event.target;
 
         if (element.matches("button") === true) {
@@ -137,7 +138,5 @@ function saveScience() {
             storephrases();
             renderphrases();
         }
-    });
+    });*/
 
-    init();
-};
