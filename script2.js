@@ -27,10 +27,11 @@ $(document).ready(function () {
 async function generateQuote() {
     try {
         const response = await fetch('https://api.chucknorris.io/jokes/random');
-        const phrase = await response.text();
+        console.log(response);
+        const phrase = await response.json();
 
-        $("#inspirationalquote").html(phrase).fadeIn();
-        console.log(phrase);
+        $("#inspirationalquote").html(phrase['value']).fadeIn();
+        console.log(phrase['value']);
 
         } catch (error) {
             console.log('Error:', error);
