@@ -3,10 +3,10 @@
 ## Project 1 for Columbia Engineering Boot Camp 
 TechTalkz TM is a "platform that teaches you how to talk like a true techie." It is essentially a cultural-commentary game reflecting on the nature of AI and reality, ultimately making light of the fact that communication is irrevocably altered in the era of AI. TechTalkz is a platform for liberal-arts enthusiasts to generate language to sound "smart" and like they know what they're doing in front of their techy friends. If anyone answers yes to the question "have you ever been the only liberal arts person in a STEM-filled room?" they can benefit from TechTalkz. TechTalkz has a generator that links to a Techy AI that allows the user to save their favorite ridiculous "science-y" phrases to local storage. Then, the user unexpectedly talks to a computer, questioning reality, and ends on a Chuck Norris generator to make light of a potentially uncomfortable topic.
 
-Installation
+# Installation
 https://tovalgreene.github.io/techtalkz/
 
-License
+# License
 MIT License
 
 Copyright (c) [2023] [TovaGreene]
