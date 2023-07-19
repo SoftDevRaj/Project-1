@@ -8,7 +8,7 @@ $(document).ready(function () {
             $("#p-3, #button-3").fadeIn([3000]);
             $("#button-3").click(function () {
                 $("#p-4, #button-4").fadeIn([3000]);
-                $("#button-4").click(function () {
+                $("#button-4").click(function  s() {
                     $("#p-5, #button-5-sciencegenerator").fadeIn([]);
                     $("#button-5-5").click(function () {
                         $("#p-6, #button-6, #button-6-5").fadeIn()[3000];
