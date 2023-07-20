@@ -19,7 +19,39 @@ When I am presented with an existential crisis by a computer,
 then I have access to a Chuck Norris generator button so I can feel better about the world.
 
 # Installation
-https://tovalgreene.github.io/techtalkz/
+https://softdevraj.github.io/Project-1/
+
+
+![image](https://github.com/SoftDevRaj/Project-1/assets/130394711/94fbde0d-b069-4538-96ee-b928efbe8837)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # License
 MIT License
