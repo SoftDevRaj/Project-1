@@ -5,6 +5,11 @@ TechTalkz TM is a "platform that teaches you how to talk like a true techie." It
 
 *In the monologue about existential dread, the writing goes from the coder's language organically into Chat GPT's answer to "write a monologue about existentialism."*
 
+# User Stories
+As a liberal arts person/someone who is not super well versed in tech (or comfortable in tech), I want an application that provides me with language via which to sound like I know what I’m saying in the tech sphere so that I can sound smart and not have imposters’ syndrome at parties or around my tech friends.
+
+As a liberal arts person/someone who is not well-versed in tech who is having a technology-driven existential crisis, I want a Chuck Norris joke to motivate me to help me believe in humanity again so that I can feel good about the world.
+
 # Installation
 https://tovalgreene.github.io/techtalkz/
 
