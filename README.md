@@ -10,6 +10,14 @@ As a liberal arts person/someone who is not super well versed in tech (or comfor
 
 As a liberal arts person/someone who is not well-versed in tech who is having a technology-driven existential crisis, I want a Chuck Norris joke to motivate me to help me believe in humanity again so that I can feel good about the world.
 
+# Acceptance Criteria
+When I am asked if I want to sound smarter to my science friends,
+then I am presented with a TechTalkz generator button that allows me to generate pseudo-scientific phrases,
+then I can save my phrases to local storage and my computer automatically calculates how many times I've "been smart today."
+
+When I am presented with an existential crisis by a computer,
+then I have access to a Chuck Norris generator button so I can feel better about the world.
+
 # Installation
 https://tovalgreene.github.io/techtalkz/
 
